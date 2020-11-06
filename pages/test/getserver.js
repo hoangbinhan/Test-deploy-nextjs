@@ -10,7 +10,7 @@ export default function GetServer(props){
 }
 
 export async function getServerSideProps(context) {
-    let data = await fetch('http://localhost:8080/user')
+    let data = await fetch('http://192.168.1.82:8080/user')
         .then(res=>res.json())
     return {
         props: {
